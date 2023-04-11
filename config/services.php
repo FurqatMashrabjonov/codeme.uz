@@ -34,7 +34,8 @@ return [
     'github' => [
         'client_id' => env('GITHUB_CLIENT_ID'),
         'client_secret' => env('GITHUB_CLIENT_SECRET'),
-        'redirect' => env('GITHUB_REDIRECT')
+        'redirect' => env('GITHUB_REDIRECT'),
+        'clone_path' => env('GITHUB_CLONE_PATH')
     ],
     'google' => [
         'client_id' => env('GOOGLE_CLIENT_ID'),
