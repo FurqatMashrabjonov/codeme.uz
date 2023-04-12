@@ -20,6 +20,7 @@ class Handle extends Controller
     {
 
         $userFromSocial = Socialite::driver($driver)->user();
+        dd($userFromSocial);
         $user = User::query()->where('email', $userFromSocial->getEmail())->first();
 
         if (!$user){
